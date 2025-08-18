@@ -1,0 +1,13 @@
+.contact-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.contact-container h3{
+    font-size: 3rem;
+    color: aliceblue;
+}

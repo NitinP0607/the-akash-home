@@ -1,0 +1,109 @@
+.carousel {
+  width: 100%;
+  min-height: 100vh; /* adjust as you like */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: row; /* put images in a row */
+  transition: transform 0.5s ease-in-out; /* smooth sliding */
+}
+
+.carousel-img {
+  width: 100%; /* each image takes full carousel width */
+  height: 100vh; /* stretch to container */
+  object-fit: cover; /* crop nicely */
+  flex-shrink: 0; /* prevent images from shrinking */
+  display: block;
+}
+.home-bottom {
+  padding: 30px 50px;
+  background: linear-gradient(to right, #000000, #1c1c1c);
+  color: white;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.brand-tagline {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.shop-btn {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.shop-btn:hover {
+  background: #6357d1; /* hover effect */
+  color: #0f0f1b;
+  transform: scale(1.08);
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 1024px) {
+  .brand-title {
+    font-size: 2.8rem;
+  }
+  .brand-tagline {
+    font-size: 1.1rem;
+  }
+  .shop-btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-bottom {
+    padding: 40px 15px;
+  }
+  .brand-title {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+  }
+  .brand-tagline {
+    font-size: 1rem;
+  }
+  .shop-btn {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-bottom {
+    padding: 30px 10px;
+  }
+  .brand-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  .brand-tagline {
+    font-size: 0.9rem;
+  }
+  .shop-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}

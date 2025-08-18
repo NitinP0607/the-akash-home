@@ -1,0 +1,13 @@
+.about-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.about-container h3{
+    font-size: 3rem;
+    color: aliceblue;
+}
