@@ -4,6 +4,9 @@ import img1 from "../assets/Akash_1.jpg";
 import img2 from "../assets/Akash_2.jpg";
 import img4 from "../assets/Akash_4.jpg";
 import img20 from "../assets/Akash_20.jpg";
+import show1 from "../assets/home-pic-vertical1.jpg";
+import show2 from "../assets/home-pic-vertical2.jpg";
+import show3 from "../assets/home-pic-vertical3.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -19,24 +22,37 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="carousel">
-      <div
-        className="carousel-track"
-        style={{ transform: `translateX(-${current * 100}%)` }}
-      >
-        {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`slide-${index}`}
-            className="carousel-img"
-          />
-        ))}
+        <div
+          className="carousel-track"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {images.map((src, index) => (
+            <div className="carousel-slide" key={index}>
+              <img src={src} alt={`slide-${index}`} className="carousel-img" />
+              <div className="carousel-overlay">
+                <h1 className="brand-title">AKASH</h1>
+                <p className="brand-tagline">
+                  Discover the latest trends in fashion with top Quality.
+                </p>
+                <Link to={"/order"} className="shop-btn">Shop Now</Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-    <div className="home-bottom">
-        <h1 className="brand-title">AKASH</h1>
-        <p className="brand-tagline">Discover the latest trends in fashion</p>
-        <Link to="/order" className="shop-btn">Shop Now</Link>
+      
+      <div className="home-bottom-show-section">
+        <div className="show-home">
+          <div className="show-img-home top">
+            <img src={show1} alt="" />
+          </div>
+          <div className="show-img-home middle">
+            <img src={show2} alt="" />
+          </div>
+          <div className="show-img-home ">
+            <img src={show3} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -4,13 +4,31 @@
   overflow: hidden;
   position: relative;
 }
-
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+}
+.carousel-slide {
+  position: relative;
+  min-width: 100%;
+}
 .carousel-track {
   display: flex;
   flex-direction: row; /* put images in a row */
   transition: transform 0.5s ease-in-out; /* smooth sliding */
+  width: 100%;
 }
-
+.carousel-overlay {
+  position: absolute;
+  top: 75%;
+  right: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 .carousel-img {
   width: 100%; /* each image takes full carousel width */
   height: 100vh; /* stretch to container */
@@ -26,10 +44,10 @@
 }
 
 .brand-title {
-  font-size: 2.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
-  letter-spacing: 5px;
   margin-bottom: 15px;
+  color: #29212b;
 }
 
 .brand-tagline {
@@ -37,7 +55,7 @@
   font-weight: 300;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
-  color: #e0e0e0;
+  color: #176fc2;
 }
 
 .shop-btn {
@@ -53,12 +71,40 @@
   text-decoration: none;
   display: inline-block;
 }
+.home-bottom-show-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  align-items: center;
+ }
+ .show-home{
+  padding: 30px 50px;
+  display: flex;
+  gap: 30px;
+  background-color: #969393;
+  color: #ffffff;
+ }
+ .show-img-home{
+  width: 30%;
 
+ }
+ .show-img-home img{
+  width: 100%;
+  
+ }
+ .top{
+    padding-top: 150px;
+ }
+.middle{
+  padding-top: 80px;
+}
 .shop-btn:hover {
   background: #6357d1; /* hover effect */
   color: #0f0f1b;
   transform: scale(1.08);
 }
+
 
 /* 📱 Responsive Styles */
 @media (max-width: 1024px) {
@@ -106,4 +152,27 @@
     font-size: 0.9rem;
     padding: 8px 20px;
   }
+  .carousel-overlay{
+    top: 75%;
+    right: 50%;
+    width: 100%;
+    padding: 20px;
+  }
+  .show-home{
+    flex-direction: column;
+    gap: 20px; 
+    padding: 30px 15px;
+  }
+  
+  .show-img-home{
+    width: 100%;
+  }
+  .top,
+  .middle{
+    padding-top: 0;
+  }
+  .show-img-home img{
+    width: 100%;
+  }
 }
+ 
