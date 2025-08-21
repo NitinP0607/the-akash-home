@@ -24,16 +24,17 @@
 }
 .carousel-overlay {
   position: absolute;
+  width: 100%;
   top: 75%;
-  right: 35%;
+  right: -50%;
   transform: translate(-50%, -50%);
   color: white;
+  padding: 0 50px;
 }
 .carousel-img {
   width: 100%; /* each image takes full carousel width */
   height: 100vh; /* stretch to container */
-  object-fit: cover; /* crop nicely */
-  flex-shrink: 0; /* prevent images from shrinking */
+  object-fit: cover; /* crop nicely */ /* prevent images from shrinking */
   display: block;
 }
 .home-bottom {
@@ -44,18 +45,25 @@
 }
 
 .brand-title {
-  font-size: 5.5rem;
+  width: 60%;
+  font-size: 40px;
   font-weight: 800;
   margin-bottom: 15px;
-  color: #29212b;
+  color: #f3f2f3;
 }
 
 .brand-tagline {
-  font-size: 1.3rem;
+  width: 60%;
+  font-size: 2.3rem;
   font-weight: 300;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
-  color: #176fc2;
+  color: #ffffff;
+}
+
+.carousel-overlay h1,
+.carousel-overlay p {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1.7); /* ensures readability */
 }
 
 .shop-btn {
@@ -71,40 +79,54 @@
   text-decoration: none;
   display: inline-block;
 }
-.home-bottom-show-section{
+.home-bottom-show-section {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  background-color: #e0e0e0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
   align-items: center;
- }
- .show-home{
+  padding: 50px 30px;
+}
+.home-bottom-show-section span p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  color: #666666ff;
+}
+.show-home {
   padding: 30px 50px;
   display: flex;
   gap: 30px;
-  background-color: #969393;
-  color: #ffffff;
- }
- .show-img-home{
+  background-color: #ffffff;
+}
+.show-img-home {
   width: 30%;
-
- }
- .show-img-home img{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.show-img-home p {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: rgb(76, 77, 78);
+}
+.show-img-home img {
   width: 100%;
-  
- }
- .top{
-    padding-top: 150px;
- }
-.middle{
-  padding-top: 80px;
+  transition: transform 0.5s ease;
+  object-fit: cover; /* keeps aspect ratio, fills the container */
+  transition: transform 1.5s ease;
+}
+.show-img-home:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .shop-btn:hover {
   background: #6357d1; /* hover effect */
   color: #0f0f1b;
   transform: scale(1.08);
 }
-
 
 /* 📱 Responsive Styles */
 @media (max-width: 1024px) {
@@ -118,8 +140,16 @@
     font-size: 1.1rem;
     padding: 12px 30px;
   }
+  .carousel-overlay {
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 0 50px;
+  }
 }
-
 @media (max-width: 768px) {
   .home-bottom {
     padding: 40px 15px;
@@ -135,6 +165,22 @@
     font-size: 1rem;
     padding: 10px 25px;
   }
+ .carousel-overlay {
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 0 50px;
+}
+  .show-home {
+    gap: 10px;
+    padding: 10px;
+  }
+  .home-bottom {
+    padding: 30px 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -144,35 +190,35 @@
   .brand-title {
     font-size: 1.8rem;
     letter-spacing: 2px;
+    width: 100%;
   }
   .brand-tagline {
     font-size: 0.9rem;
+    width: 100%;
   }
   .shop-btn {
     font-size: 0.9rem;
     padding: 8px 20px;
   }
-  .carousel-overlay{
-    top: 75%;
-    right: 50%;
-    width: 100%;
-    padding: 20px;
-  }
-  .show-home{
+  .carousel-overlay {
+  width: 100%;
+  top: 75%;
+  right: -50%;
+  padding: 0 20px;
+}
+  .show-home {
     flex-direction: column;
-    gap: 20px; 
-    padding: 30px 15px;
+    gap: 20px;
+    padding: 10px;
   }
-  
-  .show-img-home{
+
+  .show-img-home {
     width: 100%;
   }
-  .top,
-  .middle{
-    padding-top: 0;
-  }
-  .show-img-home img{
+  .show-img-home img {
     width: 100%;
+  }
+  .home-bottom-show-section {
+    padding: 10px;
   }
 }
- 

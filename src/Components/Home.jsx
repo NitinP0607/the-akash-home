@@ -8,6 +8,7 @@ import show1 from "../assets/home-pic-vertical1.jpg";
 import show2 from "../assets/home-pic-vertical2.jpg";
 import show3 from "../assets/home-pic-vertical3.jpg";
 import { Link } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const Home = () => {
   const images = [img1, img2, img4, img20];
@@ -21,6 +22,7 @@ const Home = () => {
   }, [images.length]);
   return (
     <div className="home-container">
+      <Navbar />
       <div className="carousel">
         <div
           className="carousel-track"
@@ -30,27 +32,39 @@ const Home = () => {
             <div className="carousel-slide" key={index}>
               <img src={src} alt={`slide-${index}`} className="carousel-img" />
               <div className="carousel-overlay">
-                <h1 className="brand-title">AKASH</h1>
+                <h1 className="brand-title">The house of AKASH</h1>
                 <p className="brand-tagline">
-                  Discover the latest trends in fashion with top Quality.
+                 Top brands at affordable prices and huge discounts available.Discover the latest trends in fashion with top Quality.
                 </p>
-                <Link to={"/order"} className="shop-btn">Shop Now</Link>
+                <Link to={"/order"} className="shop-btn">
+                  Shop Now
+                </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
-      
+
       <div className="home-bottom-show-section">
+        <span>
+          <p>
+          At the House of Akash, we don’t just create clothes — we weave
+          experiences.
+        </p>
+        <hr style={{border: "1px solid #666666ff"}}/>
+        </span>
         <div className="show-home">
-          <div className="show-img-home top">
+          <div className="show-img-home">
             <img src={show1} alt="" />
+            <p>Top Quality Products</p>
           </div>
-          <div className="show-img-home middle">
+          <div className="show-img-home">
             <img src={show2} alt="" />
+            <p>Available at Affordable Price</p>
           </div>
           <div className="show-img-home ">
             <img src={show3} alt="" />
+            <p>Fast & Free Delivery</p>
           </div>
         </div>
       </div>

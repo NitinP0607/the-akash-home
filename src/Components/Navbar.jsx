@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li><Link to="/" onClick={handleLinkClick}>Home</Link></li>
-          <li><Link to="/order" onClick={handleLinkClick}>Order</Link></li>
+          <li><Link to="/shop" onClick={handleLinkClick}>Shop</Link></li>
           <li><Link to="/about" onClick={handleLinkClick}>About</Link></li>
           <li><Link to="/contact" onClick={handleLinkClick}>Contact</Link></li>
         </ul>
