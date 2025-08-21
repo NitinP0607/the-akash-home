@@ -98,6 +98,8 @@
 .show-home {
   padding: 30px 50px;
   display: flex;
+  justify-content: center;
+  
   gap: 30px;
   background-color: #ffffff;
 }

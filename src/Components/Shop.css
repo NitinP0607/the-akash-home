@@ -1,5 +1,7 @@
 .shop-container{
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
     background-color: rgb(238, 238, 238);
     
 }
@@ -18,9 +20,25 @@
 .shop-sections{
     width: 100%;
     display: flex;
+    flex-direction: column;
     padding: 10px;
     background-color: rgb(238, 238, 238);
     
+}
+.shop-header{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #555454;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.shop-header:hover{
+    color: rgb(139, 139, 139);
 }
 .shop-section{
     width: 100%;
@@ -32,16 +50,64 @@
     background-color: rgb(238, 238, 238)
 }
 .product{
-    width: 400px;
-    height: 500px;
+    max-width: 400px;
+    height: 600px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    padding: 20px;
 }
 .product img{
-    width: 300px;
-    height: 300px;
+     width: 100%; /* Make images responsive */
+    height: 350px;
+    max-width: 350px;
+    border-radius: 10px;
+}
+.order-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.name-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.name-rating i{
+    color: rgb(7, 7, 7);
+}
+.order-rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.order-rate p{
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+    padding: 10px;
+}
+.order-rate button{
+    color: #fcfcfc;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(114, 115, 116);
+    
+}
+.order-rate button:hover{
+    background-color: rgb(61, 61, 61);
 }

@@ -36,7 +36,7 @@ const Home = () => {
                 <p className="brand-tagline">
                  Top brands at affordable prices and huge discounts available.Discover the latest trends in fashion with top Quality.
                 </p>
-                <Link to={"/order"} className="shop-btn">
+                <Link to={"/shop"} className="shop-btn">
                   Shop Now
                 </Link>
               </div>
