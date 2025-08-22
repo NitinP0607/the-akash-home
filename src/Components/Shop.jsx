@@ -1,6 +1,6 @@
 import React from "react";
 import "./Shop.css";
-
+import { useState } from "react";
 import pro_1 from "../assets/product-1.jpg";
 import pro_2 from "../assets/product-2.jpg";
 import pro_3 from "../assets/product-3.jpg";
@@ -49,6 +49,15 @@ const products = [
 ];
 
 const Shop = () => {
+   const [selectedProduct, setSelectedProduct] = useState(null);
+
+   const handleOrderClick = (product) => {
+    setSelectedProduct(product); // Open order modal
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+  };
   return (
     <div className="shop-container">
       <div className="shop-quote">
@@ -75,7 +84,7 @@ const Shop = () => {
                 </div>
                 <div className="order-rate">
                   <p>Rs.{product.price}</p>
-                  <button>Order Now</button>
+                  <button onClick={() => handleOrderClick(product)}>Order Now</button>
                 </div>
               </div>
               <p>{product.offer}</p>
@@ -83,6 +92,24 @@ const Shop = () => {
           ))}
         </div>
       </div>
+       {/* Order Now Modal */}
+      {selectedProduct && (
+        <div className="order-modal">
+          <div className="order-box">
+            <h2>Order {selectedProduct.name}</h2>
+            <img src={selectedProduct.img} alt={selectedProduct.name} />
+            <p>Price: Rs.{selectedProduct.price}</p>
+            <form className="order-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Shipping Address" required />
+              <input type="number" placeholder="Quantity" min="1" defaultValue="1" />
+              <button type="submit">Confirm Order</button>
+            </form>
+            <button className="close-btn" onClick={closeModal}>X</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

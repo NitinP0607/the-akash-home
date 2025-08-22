@@ -76,15 +76,31 @@ const Home = () => {
           <p className="sale-text">Get 20% off on all products</p>
           <div className="show-last">
             <p>
-              Step into a world of endless choices with our Browse Collection,
-              where every product is carefully selected to bring you the best in
-              style, quality, and value. From everyday essentials to trending
-              must-haves, our collection is designed to fit every lifestyle and
-              occasion. We believe shopping should be simple, exciting, and
-              rewarding—that’s why we bring together top-rated products at
-              prices you’ll love. Whether you’re treating yourself or finding
-              the perfect gift, our Browse Collection ensures you always have
-              access to variety, affordability, and excellence in one place
+              At The House of Akash, fashion is more than just clothing — it’s
+              an experience, a statement, and a lifestyle. Our vision is to
+              bring together timeless style and modern trends, creating a
+              collection that celebrates individuality while ensuring comfort
+              and quality. Every product in our collection is handpicked with
+              care, combining premium fabrics, innovative designs, and attention
+              to detail, so you can look your best without compromising on
+              affordability. We believe that great style should be accessible to
+              everyone, which is why we provide top-quality products at prices
+              you’ll love. From daily essentials to seasonal trends, from casual
+              wear to statement pieces, our collection is designed to complement
+              every occasion in your life. With fast delivery, exciting offers,
+              and a promise of excellence, we strive to make your shopping
+              journey not just simple but truly enjoyable Step into a world of
+              endless choices with our Browse Collection, where every product is
+              carefully selected to bring you the best in style, quality, and
+              value. From everyday essentials to trending must-haves, our
+              collection is designed to fit every lifestyle and occasion. We
+              believe shopping should be simple, exciting, and rewarding—that’s
+              why we bring together top-rated products at prices you’ll love.
+              Whether you’re treating yourself or finding the perfect gift, our
+              Browse Collection ensures you always have access to variety,
+              affordability, and excellence in one place. Take your time,
+              explore, and discover items that speak to your taste while making
+              every purchase worth more.
             </p>
             <Link to="/shop">
               <img src={img7} alt="img" />
