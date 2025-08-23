@@ -1,13 +1,158 @@
-.about-container{
-    min-height: 100vh;
+.about-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden
+}
+
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 5rem;
+  background: linear-gradient(to right, #8b7c7c, #493e3e);
+  margin-bottom: 3rem;
+  color: #e8e8e8;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #1c2047;
+  font-weight: bold;
+}
+.about-sections {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.about-section {
+  margin-bottom: 3rem;
+  padding: 1rem 5rem;
+  background: linear-gradient(to right, #f5f5f5, #e8e8e8);
+  border-radius: 12px;
+  width: 70%;
+  
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #171536;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #1c2047;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.values li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+.videos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.profile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.profile img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.profile p{
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8;
+  padding: 10px;
+}
+.vedios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.vedio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.circle-video {
+  width: 250px; /* equal width & height */
+  height: 250px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover; /* ensures video fills the circle */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease; /* optional: nice shadow */
+}
+
+.circle-video:hover {
+  transform: scale(1.05); /* smooth zoom on hover */
+}
+@media screen and (max-width: 480px) {
+  .about-hero{
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .about-sections{
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .about-section{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    
-}
-.about-container h3{
-    font-size: 3rem;
-    color: aliceblue;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .about-section h2{
+    font-size: 1.5rem;
+  }
+  .videos-container{
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .vedios{
+    width: 100%;
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 20px
+  }
 }

@@ -9,11 +9,12 @@
     text-align: center;
     margin-bottom: 40px;
     padding: 40px 0px;
-    background-color: rgb(152, 218, 230);
+    color: #ccc;
+    background: linear-gradient(to right, #8b7c7c, #493e3e);
+
 }
 .shop-title,
 .shop-subtitle{
-    color: #555454;
     font-weight: 600;
     padding: 10px;
 }

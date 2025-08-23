@@ -100,10 +100,11 @@ const Shop = () => {
             <img src={selectedProduct.img} alt={selectedProduct.name} />
             <p>Price: Rs.{selectedProduct.price}</p>
             <form className="order-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <input type="text" placeholder="Shipping Address" required />
-              <input type="number" placeholder="Quantity" min="1" defaultValue="1" />
+              <input type="text" placeholder="EnterYour Name" required />
+              <input type="email" placeholder="Enter Your Email" required />
+              <input type="number"  placeholder="Enter the Contact Number" required />
+              <input type="text" placeholder="Enter Shipping Address" required />
+              <input type="number" placeholder="Enter Quantity" min="1" defaultValue="1" />
               <button type="submit">Confirm Order</button>
             </form>
             <button className="close-btn" onClick={closeModal}>X</button>
