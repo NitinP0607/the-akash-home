@@ -57,7 +57,7 @@
 .about-section p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #1c2047;
+  color: #333;
 }
 
 .values ul {
@@ -92,7 +92,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 .profile p{
-  width: auto;
+  width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.8;
@@ -151,8 +151,16 @@
   }
   .vedios{
     width: 100%;
-    padding: 1.5rem;
     flex-direction: column;
     gap: 20px
+  }
+  .profile{
+    width: 100%;
+    padding: 20px;
+  }
+  .profile p{
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
   }
 }
