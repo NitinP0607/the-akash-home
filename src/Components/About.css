@@ -164,3 +164,28 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .profile{
+    width: 100%;
+    padding: 20px;
+  }
+  .profile p{
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width: 1380px){
+  .profile{
+    width: 100%;
+    padding: 20px;
+  }
+  .profile p{
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+} 
