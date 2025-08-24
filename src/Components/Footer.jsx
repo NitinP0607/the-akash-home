@@ -30,10 +30,10 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Customer Care</h4>
           <ul>
-            <li><Link to="/faq">FAQ</Link></li>
-            <li><Link to="/returns">Returns</Link></li>
-            <li><Link to="/shipping">Shipping</Link></li>
-            <li><Link to="/privacy">Privacy Policy</Link></li>
+            <li><Link to="/policy">FAQ</Link></li>
+            <li><Link to="/policy">Returns</Link></li>
+            <li><Link to="/policy">Shipping</Link></li>
+            <li><Link to="/policy">Privacy Policy</Link></li>
           </ul>
         </div>
         </div>
@@ -42,8 +42,8 @@ const Footer = () => {
         <div className="footer-social">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="https://www.facebook.com/"><FaFacebook /></a>
-            <a href="https://www.instagram.com/a_bhartii/"><FaInstagram /></a>
+            <a href="https://www.facebook.com/share/1D1NgyqadB/?mibextid=wwXIfr"><FaFacebook /></a>
+            <a href="https://www.instagram.com/thehouseof_akash?igsh=MTZqNmNwejVhMTRydw%3D%3D&utm_source=qr"><FaInstagram /></a>
             <a href="https://www.youtube.com/@Akashtalkpolitics"><FaYoutube /></a>
             <a href="https://www.linkedin.com/"><FaLinkedin /></a>
           </div>
